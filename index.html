@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Discord Battle Simulator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Battle Damage Simulator</h1>
+
+  <div id="cards">
+    <!-- 5 cards -->
+    <div class="card">
+      <input placeholder="Name">
+      <input type="number" placeholder="HP">
+      <input type="number" placeholder="ATK">
+      <input type="number" step="0.1" placeholder="Multiplier">
+    </div>
+  </div>
+
+  <button id="addCard">Add Card (max 5)</button>
+
+  <div class="enemy">
+    <h3>Enemy</h3>
+    <input type="number" id="enemyAtk" placeholder="Enemy ATK">
+  </div>
+
+  <button id="simulate">Simulate Battle</button>
+
+  <h2 id="totalDamage"></h2>
+
+  <canvas id="damageChart"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
